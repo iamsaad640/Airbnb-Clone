@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/* Navbar Styling */
+.navbarComponent{
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  margin:auto;
+  max-width: 550px;
+  height: 70px;
+  padding: 22px 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  max-width:550px;
+  display: block;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Hero Section */
+.hero {
+  padding: 36px;
+}
+
+.hero--banner {
+  width: 395.91px;
+  display: block;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.hero > div > h1 {
+  font-size: 36px;
+line-height: 2.5rem;
+margin-bottom: 10px;
+}
+
+.hero > div > p {
+  display: block;
+  max-width: 320px;
+}
+
+/* Post Grid */
+.post-section {
+  display: flex;
+  gap: 18px;
+  overflow: scroll;
+  flex-wrap: nowrap;
+}
+
+.post {
+  padding: 0 0 10px 36px;
+  width: 175px;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.post--thumbnail {
+  width: 175px;
+  display: block;
+}
+
+.post--stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post--star {
+  height: 14px;
+}
+
+.gray {
+  color: #918e98;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (max-width:550px) {
+  
+  .main-content{
+    width: 375px;
   }
-  to {
-    transform: rotate(360deg);
+ 
+  .hero--banner{
+    width: 300px;
   }
+
 }
