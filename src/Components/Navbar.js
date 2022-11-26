@@ -1,10 +1,8 @@
-import logo from "../images/airbnb-logo.svg"
-
 function Navbar() {
     return ( 
         <div className="navbarComponent" >
             <nav>
-                <a href="/" rel=""><img src={logo} alt="airbnb logo"/></a>
+                <a href="/" rel=""><img src="/images/airbnb-logo.svg" alt="airbnb logo"/></a>
             </nav>
         </div>
      );
